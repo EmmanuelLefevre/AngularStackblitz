@@ -22,6 +22,8 @@ export class WateringService {
     let watering8: Watering = new Watering (8,'Potager (Paris)','4021','2.94',true,{id:2,name:'Paris'});
     let watering9: Watering = new Watering (9,'Terrasse (N-Y)','3954','1.48',true,{id:1,name:'New-York'});
     let watering10: Watering = new Watering (10,'Jardinière (N-Y)','3715','3.41',true,{id:1,name:'New-York'});
+    let watering11: Watering = new Watering (10,'Bassin (N-Y)','3120','2.28',true,{id:1,name:'New-York'});
+    let watering12: Watering = new Watering (10,'Bassin (Paris)','1983','1.47',true,{id:2,name:'Paris'});
 
     this.waterings.push(watering1);
     this.waterings.push(watering2);
@@ -33,6 +35,8 @@ export class WateringService {
     this.waterings.push(watering8);
     this.waterings.push(watering9);
     this.waterings.push(watering10);
+    this.waterings.push(watering11);
+    this.waterings.push(watering12);
   }
   
   // Get List of Waterings
