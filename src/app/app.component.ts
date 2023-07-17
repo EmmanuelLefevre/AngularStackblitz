@@ -31,10 +31,6 @@ export class AppComponent implements OnInit {
   name = environment.application.name;
   title = "Tableau arrosage";
 
-  // Confirm Dialog this.result = boolean
-  result: boolean | undefined;
-  // updateStatus()
-  status: boolean | undefined;
   // Ngx-pagination
   p: number = 1;
   count: number = 0;
@@ -89,6 +85,10 @@ export class AppComponent implements OnInit {
 
   resetPagination(): void {
     this.p = 1;
+  }
+
+  updateStatus(watering: any): void {
+    watering.status = !watering.status;
   }
 
 }
