@@ -84,10 +84,6 @@
               <td class="power">
                 <button type="submit" 
                         [attr.aria-label]="watering.status ? 'Eteindre l\'arrosage' : 'Allumer l\'arrosage'"
-                        [matTooltip]="watering.status ? 'Eteindre' : 'Allumer'"
-                        matTooltipPosition="left"
-                        matTooltipShowDelay="1000"
-                        matTooltipClass="'mat-tooltip'"
                         [class.btn-off]="!watering.status">
                   <fa-icon [icon]="faPowerOff"></fa-icon>
                 </button>
@@ -99,19 +95,11 @@
               <td *ngIf="watering.status === false">-</td>
               <td>
                 <button type="button"
-                        aria-label="Bouton permettant de modifier le nom de l'arrosage"
-                        matTooltip="Modifier"
-                        matTooltipPosition="before"
-                        matTooltipShowDelay="500"
-                        matTooltipClass="'mat-tooltip'">
+                        aria-label="Bouton permettant de modifier le nom de l'arrosage">
                   <fa-icon [icon]="faPen"></fa-icon>
                 </button>
                 <button type="submit"
                         aria-label="Bouton permettant de supprimer l'arrosage"
-                        matTooltip="Supprimer"
-                        matTooltipPosition="after"
-                        matTooltipShowDelay="500"
-                        matTooltipClass="'mat-tooltip'"
                         class="trash">
                   <fa-icon [icon]="faTrash"></fa-icon>
                 </button>
