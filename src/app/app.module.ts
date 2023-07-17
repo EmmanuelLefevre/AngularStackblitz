@@ -6,7 +6,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { OrderModule } from 'ngx-order-pipe';
 import { FilterPipeModule } from 'ngx-filter-pipe';
-import { DirectivesModule } from 'src/app/_directives/directives.module';
+import { DirectivesModule } from './_directives/directives.module';
 
 import { AppComponent } from './app.component';
 

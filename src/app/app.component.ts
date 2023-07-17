@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 // Add ViewEncapsulation for resolve problems with loading custom scss .mat-tooltip-social in style.scss
 import { faPowerOff, faPen, faTrash, faSort, faSearch, faDroplet, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { environment } from 'src/environments/environment';
+import { environment } from './../environments/environment';
 
 import { WateringService } from './_services/watering.service';
 import { GardenService } from './_services/garden.service';
